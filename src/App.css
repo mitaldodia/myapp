@@ -45,6 +45,30 @@ button.first-dem-btn:hover{
   color: #fff;
   background-color: #221442;
 }
+h2.title-all-cons{
+  padding-bottom: 28px;
+    margin-bottom: 41px;
+    font-size: 36px;
+    line-height: 40px;
+    color: #0F3661;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+ h2.title-all-cons::before{
+  position: absolute;
+  content: "";
+    left: 50%;
+    bottom: 0px;
+    margin-left: -40px;
+    width: 80px;
+    height: 5px;
+    background-color: #652ee1;
+}
+
 
 
 .header-all .header-top{
@@ -203,6 +227,7 @@ padding: 0;
 /* banner css start here  */
 .banner-contains{
   height: 630px;
+  position: relative;
 }
 .banner-contains .banner-details{
   background-image: url(../src/inc/banner-bg.jpg);
@@ -215,12 +240,9 @@ padding: 0;
   opacity: 1;
   visibility: inherit;
   z-index: 20;
+  position: relative;
 }
-.banner-contains .banner-details .banner-txt{
-  height: 630px;
-  display: flex;
-  align-items: center;
-}
+
 .banner-contains .banner-details .banner-txt .banner-up-txt h1{
   color: #0f3661;
   font-size: 60px;
@@ -232,4 +254,137 @@ padding: 0;
   display: flex;
   margin-top: 30px;
   align-self: center;
+}
+.banner-up-txt {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+.banner-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #652ee1;
+}
+.banner-bottom-txt{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.banner-right-btn .btn-details button.first-dem-btn{
+  background-color: #221442;
+}
+banner-left-txt{
+  color: #ebebeb;
+}
+
+/* about us details start here  */
+.about-details{
+  margin: 40px 0;
+}
+.about-title{
+  padding: 0 140px;
+}
+.about-title p{
+  color: #0f3661;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+.about-us-box{
+  margin: 40px 0;
+  background-color: #fff;
+    z-index: 1;
+    box-shadow: 0px 16px 35px 0px rgb(0 0 0 / 20%);
+}
+.about-box-details {
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  background-size: cover;
+}
+.about-box-details:hover {
+  background-image: linear-gradient(rgba(18, 15, 89, 0.579),rgba(15, 40, 89, 0.344)),url(../src/inc/box-bg.jpg);
+  color: #fff;
+}
+.about-box-details svg{
+  font-size: 30px;
+}
+.about-box-details h5{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* counter-details css start here  */
+.counter-details{
+  background-image: url(../src/inc/counter-ng.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  z-index: 9;
+  margin: 100px 0;
+}
+.overlay-bg {
+  background-color: rgb(34 20 66 / 71%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.counter-all{
+  text-align: center;
+  color: #fff;
+}
+.counter-all svg{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.counter-all h2{
+  font-size: 54px;
+    line-height: 55px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #652ee1;
+}
+
+.counter-all p{
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/* industries details css start  */
+.indest-box{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0;
+}
+.industries-details{
+  margin: 30px 0;
+}
+.indust-icon
+{
+  width: 120px;
+    color: #fff;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #652ee1;
+    margin-top: 10px;
+}
+.indust-icon svg{
+  font-size: 30px;
+}
+.indust-txt{
+  margin-left: 15px;
 }
