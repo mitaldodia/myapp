@@ -6,6 +6,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhone,  } from '@fortawesome/free-solid-svg-icons';
 import Buttons from '../share-components/Button';
+import { faFacebookF, faTwitter, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
+
 
 
 
@@ -104,6 +106,33 @@ export default function Footer() {
                 </Row>   
             </Container>
         </div> 
+        <div className="footer-bottom">
+            <Container>
+                <div className="footer-bottom-details">
+                    <div className="copy-text">@2017 Themesflat. All rights reserved.</div>
+                    <div className="social-icon">
+                        <ul>
+                            <li>
+                                <a herf="#!">
+                                    <FontAwesomeIcon icon={ faFacebookF }></FontAwesomeIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a herf="#!">
+                                    <FontAwesomeIcon icon={ faTwitter }></FontAwesomeIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a herf="#!">
+                                    <FontAwesomeIcon icon={ faGooglePlusG }></FontAwesomeIcon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </Container>
+        </div>
     </div>
   )
 }
