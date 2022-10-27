@@ -7,6 +7,7 @@ body {
 	color: #646a7c;
 
 }
+
 a{
   text-decoration: none;
   cursor: pointer;
@@ -70,7 +71,10 @@ h2.title-all-cons{
 }
 
 
-
+.header-bottom {
+  z-index: 999999;
+  position: relative;
+}
 .header-all .header-top{
     background-color: #edeff1;
     color: #28293a;
@@ -228,6 +232,8 @@ padding: 0;
 .banner-contains{
   height: 630px;
   position: relative;
+  z-index: 9;
+    margin-top: -30px;
 }
 .banner-contains .banner-details{
   background-image: url(../src/inc/banner-bg.jpg);
